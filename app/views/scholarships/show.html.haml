@@ -1,0 +1,39 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @scholarship.name
+%p
+  %b Link:
+  = @scholarship.link
+%p
+  %b Year:
+  = @scholarship.year
+%p
+  %b Deadline:
+  = @scholarship.deadline
+%p
+  %b Addr:
+  = @scholarship.addr
+%p
+  %b Attachment:
+  = @scholarship.attachment
+%p
+  %b Prize:
+  = @scholarship.prize
+%p
+  %b Max:
+  = @scholarship.max
+%p
+  %b Applicant:
+  = @scholarship.applicant
+%p
+  %b Desc1:
+  = @scholarship.desc1
+%p
+  %b Desc2:
+  = @scholarship.desc2
+
+= link_to 'Edit', edit_scholarship_path(@scholarship)
+\|
+= link_to 'Back', scholarships_path

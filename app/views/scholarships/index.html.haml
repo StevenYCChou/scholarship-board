@@ -1,0 +1,30 @@
+%h1 獎學金列表
+
+= link_to '獎學金統計數據', 'http://home.andrewyalai.com/tmp/'
+/ = button_to '清寒', scholarships_path(:applicant => '清寒'), 'id' => "applicant"  
+/ = button_to '僑生', scholarships_path(:applicant => '僑生'), 'id' => "applicant"
+/ = button_to '原住民', scholarships_path(:applicant => '原住民'), 'id' => "applicant"
+/ = button_to '身障生', scholarships_path(:applicant => '身障生'), 'id' => "applicant"
+
+
+%table#scholarships
+  %tr
+    %th 獎學金名稱
+    %th{:class => ('hilite' if sort_prize?)}= link_to '金額', scholarships_path(:sort => "prize"), 'id' => "prize_header"
+    %th{:class => ('hilite' if sort_deadline?)}= link_to '截止時間', scholarships_path(:sort => "deadline"), 'id' => "deadline_header"
+    %th
+    %th
+    %th
+
+  - @scholarships.each do |scholarship|
+    %tr
+      %td= scholarship.name
+      %td.prize= (scholarship.prize / 1000).to_s + "k"
+      %td.deadline= scholarship.deadline
+      %td= link_to 'Show', scholarship
+      %td= link_to 'Edit', edit_scholarship_path(scholarship)
+      %td= link_to 'Destroy', scholarship, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Scholarship', new_scholarship_path

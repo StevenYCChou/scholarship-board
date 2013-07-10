@@ -1,0 +1,259 @@
+find_header: checking for sqlite3.h... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -E -I/opt/local/include -I. -I/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin12.3.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2 -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libxml2/include -I/usr/local/opt/libxslt/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -I/usr/local/opt/sqlite/include  -fno-common -pipe -fno-common    conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include <sqlite3.h>
+/* end */
+
+--------------------
+
+find_library: checking for sqlite3_libversion_number() in -lsqlite3... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/opt/local/include -I. -I/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin12.3.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2 -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libxml2/include -I/usr/local/opt/libxslt/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -I/usr/local/opt/sqlite/include  -fno-common -pipe -fno-common   conftest.c  -L. -L/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libxml2/lib -L/usr/local/opt/libxslt/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/sqlite/lib     -lruby-static -lsqlite3  -L/opt/local/lib -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘sqlite3_libversion_number’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))sqlite3_libversion_number; return 0; }
+/* end */
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/opt/local/include -I. -I/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin12.3.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2 -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libxml2/include -I/usr/local/opt/libxslt/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -I/usr/local/opt/sqlite/include  -fno-common -pipe -fno-common   conftest.c  -L. -L/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libxml2/lib -L/usr/local/opt/libxslt/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/sqlite/lib     -lruby-static -lsqlite3  -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { sqlite3_libversion_number(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_proc_arity()... -------------------- no
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/opt/local/include -I. -I/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin12.3.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2 -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libxml2/include -I/usr/local/opt/libxslt/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -I/usr/local/opt/sqlite/include  -fno-common -pipe -fno-common   conftest.c  -L. -L/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libxml2/lib -L/usr/local/opt/libxslt/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/sqlite/lib    -lsqlite3  -lruby-static -lsqlite3  -L/opt/local/lib -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘rb_proc_arity’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))rb_proc_arity; return 0; }
+/* end */
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/opt/local/include -I. -I/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin12.3.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2 -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libxml2/include -I/usr/local/opt/libxslt/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -I/usr/local/opt/sqlite/include  -fno-common -pipe -fno-common   conftest.c  -L. -L/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libxml2/lib -L/usr/local/opt/libxslt/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/sqlite/lib    -lsqlite3  -lruby-static -lsqlite3  -L/opt/local/lib -ldl -lobjc  "
+Undefined symbols for architecture x86_64:
+  "_rb_proc_arity", referenced from:
+      _t in ccgTJ2x1.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { rb_proc_arity(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for sqlite3_initialize()... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/opt/local/include -I. -I/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin12.3.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2 -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libxml2/include -I/usr/local/opt/libxslt/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -I/usr/local/opt/sqlite/include  -fno-common -pipe -fno-common   conftest.c  -L. -L/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libxml2/lib -L/usr/local/opt/libxslt/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/sqlite/lib    -lsqlite3  -lruby-static -lsqlite3  -L/opt/local/lib -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘sqlite3_initialize’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))sqlite3_initialize; return 0; }
+/* end */
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/opt/local/include -I. -I/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin12.3.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2 -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libxml2/include -I/usr/local/opt/libxslt/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -I/usr/local/opt/sqlite/include  -fno-common -pipe -fno-common   conftest.c  -L. -L/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libxml2/lib -L/usr/local/opt/libxslt/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/sqlite/lib    -lsqlite3  -lruby-static -lsqlite3  -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { sqlite3_initialize(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for sqlite3_backup_init()... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/opt/local/include -I. -I/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin12.3.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2 -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libxml2/include -I/usr/local/opt/libxslt/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -I/usr/local/opt/sqlite/include  -fno-common -pipe -fno-common   conftest.c  -L. -L/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libxml2/lib -L/usr/local/opt/libxslt/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/sqlite/lib    -lsqlite3  -lruby-static -lsqlite3  -L/opt/local/lib -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘sqlite3_backup_init’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))sqlite3_backup_init; return 0; }
+/* end */
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/opt/local/include -I. -I/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin12.3.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2 -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libxml2/include -I/usr/local/opt/libxslt/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -I/usr/local/opt/sqlite/include  -fno-common -pipe -fno-common   conftest.c  -L. -L/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libxml2/lib -L/usr/local/opt/libxslt/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/sqlite/lib    -lsqlite3  -lruby-static -lsqlite3  -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { sqlite3_backup_init(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for sqlite3_column_database_name()... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/opt/local/include -I. -I/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin12.3.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2 -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libxml2/include -I/usr/local/opt/libxslt/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -I/usr/local/opt/sqlite/include  -fno-common -pipe -fno-common   conftest.c  -L. -L/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libxml2/lib -L/usr/local/opt/libxslt/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/sqlite/lib    -lsqlite3  -lruby-static -lsqlite3  -L/opt/local/lib -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘sqlite3_column_database_name’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))sqlite3_column_database_name; return 0; }
+/* end */
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/opt/local/include -I. -I/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin12.3.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2 -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libxml2/include -I/usr/local/opt/libxslt/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -I/usr/local/opt/sqlite/include  -fno-common -pipe -fno-common   conftest.c  -L. -L/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libxml2/lib -L/usr/local/opt/libxslt/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/sqlite/lib    -lsqlite3  -lruby-static -lsqlite3  -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { sqlite3_column_database_name(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for sqlite3_enable_load_extension()... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/opt/local/include -I. -I/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin12.3.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2 -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libxml2/include -I/usr/local/opt/libxslt/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -I/usr/local/opt/sqlite/include  -fno-common -pipe -fno-common   conftest.c  -L. -L/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libxml2/lib -L/usr/local/opt/libxslt/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/sqlite/lib    -lsqlite3  -lruby-static -lsqlite3  -L/opt/local/lib -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘sqlite3_enable_load_extension’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))sqlite3_enable_load_extension; return 0; }
+/* end */
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/opt/local/include -I. -I/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin12.3.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2 -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libxml2/include -I/usr/local/opt/libxslt/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -I/usr/local/opt/sqlite/include  -fno-common -pipe -fno-common   conftest.c  -L. -L/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libxml2/lib -L/usr/local/opt/libxslt/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/sqlite/lib    -lsqlite3  -lruby-static -lsqlite3  -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { sqlite3_enable_load_extension(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for sqlite3_load_extension()... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/opt/local/include -I. -I/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin12.3.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2 -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libxml2/include -I/usr/local/opt/libxslt/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -I/usr/local/opt/sqlite/include  -fno-common -pipe -fno-common   conftest.c  -L. -L/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libxml2/lib -L/usr/local/opt/libxslt/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/sqlite/lib    -lsqlite3  -lruby-static -lsqlite3  -L/opt/local/lib -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘sqlite3_load_extension’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))sqlite3_load_extension; return 0; }
+/* end */
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/opt/local/include -I. -I/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin12.3.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2 -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libxml2/include -I/usr/local/opt/libxslt/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -I/usr/local/opt/sqlite/include  -fno-common -pipe -fno-common   conftest.c  -L. -L/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libxml2/lib -L/usr/local/opt/libxslt/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/sqlite/lib    -lsqlite3  -lruby-static -lsqlite3  -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { sqlite3_load_extension(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for sqlite3_open_v2()... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/opt/local/include -I. -I/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin12.3.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2 -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libxml2/include -I/usr/local/opt/libxslt/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -I/usr/local/opt/sqlite/include  -fno-common -pipe -fno-common   conftest.c  -L. -L/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libxml2/lib -L/usr/local/opt/libxslt/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/sqlite/lib    -lsqlite3  -lruby-static -lsqlite3  -L/opt/local/lib -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘sqlite3_open_v2’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))sqlite3_open_v2; return 0; }
+/* end */
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/opt/local/include -I. -I/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin12.3.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2 -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libxml2/include -I/usr/local/opt/libxslt/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -I/usr/local/opt/sqlite/include  -fno-common -pipe -fno-common   conftest.c  -L. -L/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libxml2/lib -L/usr/local/opt/libxslt/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/sqlite/lib    -lsqlite3  -lruby-static -lsqlite3  -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { sqlite3_open_v2(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for sqlite3_prepare_v2()... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/opt/local/include -I. -I/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin12.3.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2 -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libxml2/include -I/usr/local/opt/libxslt/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -I/usr/local/opt/sqlite/include  -fno-common -pipe -fno-common   conftest.c  -L. -L/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libxml2/lib -L/usr/local/opt/libxslt/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/sqlite/lib    -lsqlite3  -lruby-static -lsqlite3  -L/opt/local/lib -ldl -lobjc  "
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘sqlite3_prepare_v2’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))sqlite3_prepare_v2; return 0; }
+/* end */
+
+"/usr/local/bin/gcc-4.2 -o conftest -I/opt/local/include -I. -I/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin12.3.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2 -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libxml2/include -I/usr/local/opt/libxslt/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -I/usr/local/opt/sqlite/include  -fno-common -pipe -fno-common   conftest.c  -L. -L/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libxml2/lib -L/usr/local/opt/libxslt/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/sqlite/lib    -lsqlite3  -lruby-static -lsqlite3  -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { sqlite3_prepare_v2(); return 0; }
+/* end */
+
+--------------------
+
+have_type: checking for sqlite3_int64 in sqlite3.h... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -I/opt/local/include -I. -I/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin12.3.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2 -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libxml2/include -I/usr/local/opt/libxslt/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -I/usr/local/opt/sqlite/include  -fno-common -pipe -fno-common     -c conftest.c"
+checked program was:
+/* begin */
+1: #include <sqlite3.h>
+2: 
+3: /*top*/
+4: typedef sqlite3_int64 conftest_type;
+5: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for sqlite3_uint64 in sqlite3.h... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -I/opt/local/include -I. -I/Users/ycchou/.rvm/rubies/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin12.3.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -g -O2 -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libxml2/include -I/usr/local/opt/libxslt/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -I/usr/local/opt/sqlite/include  -fno-common -pipe -fno-common     -c conftest.c"
+checked program was:
+/* begin */
+1: #include <sqlite3.h>
+2: 
+3: /*top*/
+4: typedef sqlite3_uint64 conftest_type;
+5: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
